@@ -1,0 +1,30 @@
+1. First Update Sever
+apt-get update
+
+2. Install Apache2
+apt-get install apache2
+
+---Test your server by entering your ip on browser
+3. Install mysql 
+apt-get install mysql-server
+
+4. Install php 
+sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+
+5. Edit conf file to move .php first
+sudo nano /etc/apache2/mods-enabled/dir.conf
+
+6. Restart server
+sudo systemctl restart apache2	
+
+7. Change directory
+cd /var/www/html
+
+8. Move .php file first
+sudo nano /var/www/html/info.php
+
+9. Intall phpmyadmin
+apt-get install phpmyadmin set and enter password
+
+10. Restart server
+service apache2 restart
